@@ -333,7 +333,8 @@ export default {
       this.currentId = Object.prototype.hasOwnProperty.call(this.items[index], 'id')
         ? this.items[index].id
         : null
-
+      
+      this.$emit('currentImageIndex', index)
       this.sendId()
     },
     thumbnailStyle(index) {
