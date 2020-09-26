@@ -335,6 +335,7 @@ export default {
         : null
 
       this.sendId()
+      this.$emit('currentImageIndex', index)
     },
     thumbnailStyle(index) {
       let color =
